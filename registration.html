@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+
+
+</head>
+<body>
+<div align="center">
+	<h1>Registration Form</h1>
+	<form method="post"action="">
+		<input type="text" placeholder="Enter your name" size="25" id="nm">
+		<br><br>
+		<input type="number" placeholder="Enter your age" size="25" id="age">
+		<br><br>
+		<input type="email" placeholder="Enter your Email ID" size="25" id="email">
+		<br><br>
+		<input type="button" value="REGISTER" onClick="userDetails()">
+	</form>
+	<div id="data" class="abc"></div>
+	<script type="text/javascript">
+		function userDetails()
+		{
+			var userName = document.getElementById('nm').value;
+			var userAge = document.getElementById('age').value;
+			var userid = document.getElementById('email').value;
+			document.getElementById('data').innerHTML ="<h1>Name:"+userName + "<br> Age:" + userAge +"<br>Email ID:"+ userid ;
+		}
+	</script>
+</div>
+</body>
+</html>
